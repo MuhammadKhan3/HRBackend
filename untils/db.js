@@ -1,7 +1,8 @@
 const Sequelize = require('sequelize');
 const password=process.env.PASSWORD
-const user=process.env.USERNAME;
+const user=process.env.USER;
 const dbname=process.env.DBNAME
+console.log(user,dbname,password)
 const sequelize = new Sequelize(dbname,user,password , {
   host: 'localhost',
   dialect: 'mysql',
