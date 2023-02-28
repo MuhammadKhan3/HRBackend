@@ -1,11 +1,14 @@
 const Sequelize = require('sequelize');
-console.log(process.env.PORT)
-const sequelize = new Sequelize('hrm', 'root', 'ahmad327', {
+const password=process.env.PASSWORD
+const user=process.env.USERNAME;
+const dbname=process.env.DBNAME
+const sequelize = new Sequelize(dbname,user,password , {
   host: 'localhost',
   dialect: 'mysql',
 });
 
-sequelize.authenticate()
+sequelize
+  .authenticate()
   .then(() => console.log('Connection has been established successfully.'))
   .catch(err => console.error('Unable to connect to the database:', err));
 
