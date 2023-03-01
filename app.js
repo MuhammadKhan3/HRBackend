@@ -1,46 +1,48 @@
 const express=require('express');
 const app=express();
-const db=require('./untils/db')
-const winston = require('winston');
-const sequelize = require('./untils/db');
-const User=require('./models/user')
-const Employee = require('./models/employee');
-const Role = require('./models/role');
-const Permission = require('./models/permission');
-const RolePermission = require('./models/role_permission');
+const db=require('./src/untils/db')
+const sequelize = require('./src/untils/db');
+const User=require('./src/models/user')
+const Employee = require('./src/models/employee');
+const Role = require('./src/models/role');
+const Permission = require('./src/models/permission');
+const adminRoutes=require('./src/routes/adminRoutes');
+const logger=require('./src/logs')
+const version1='v1';
 
-// Define the logger configuration
-const logger = winston.createLogger({
-  level: 'info',
-  format: winston.format.combine(
-    winston.format.timestamp(),
-    winston.format.json()
-  ),
-  transports: [
-    new winston.transports.File({ filename: 'logs/info.log', level: 'info' }),
-    new winston.transports.File({ filename: 'logs/error.log', level: 'error' }),
-    new winston.transports.File({ filename: 'logs/response.log', level: 'http' })
-  ]
-});
+app.use(express.json());
+
+
+
+// `${version1}/admin`
+app.use('/admin',adminRoutes)
 
 
 // Error Handler
-app.use((error,req,res,next)=>{})
+app.use((error,req,res,next)=>{
+console.log('issue',error)  
+})
 
 
 // RelationShips Role and Permissions
-Role.belongsToMany(Permission, { through: RolePermission });
-Permission.belongsToMany(Role, { through: RolePermission });
+Role.hasOne(User);
+User.belongsTo(Role);
+
+Permission.hasOne(User);
+User.belongsTo(Permission);
 
 // RelationShips Role entity and user entity
 
 
 
 
-
-sequelize.sync().then(() => {
+// My sql database create
+sequelize
+.sync()
+.then(() => {
   console.log('Models synchronized successfully.');
-}).catch((error) => {
+})
+.catch((error) => {
   console.error('Error synchronizing models:', error);
 });
 

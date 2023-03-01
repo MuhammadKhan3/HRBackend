@@ -7,8 +7,10 @@ const Role = sequelize.define('role', {
         autoIncrement: true,
         primaryKey: true
     },
-    title:{
+    roleName:{
         type:DataTypes.STRING,
+        allowNull:false,
+        unique:true,
     }
 },{
     timestamps: true,
