@@ -32,3 +32,6 @@ exports.signup=async (req,res,next)=>{
     return Error(req,res,error);   
   }
 }
+
+
+

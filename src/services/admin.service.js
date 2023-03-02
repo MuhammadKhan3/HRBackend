@@ -2,6 +2,8 @@ const {insertRoleDto,signupDto}=require('../dto/admin.dto');
 const Permission = require('../models/permission');
 const Role=require('../models/role');
 const User = require('../models/user');
+var bcrypt = require('bcryptjs');
+
 
 const InsertRole=async (roleName)=>{
     const response=await Role.create({roleName:roleName});
@@ -25,9 +27,11 @@ const Signup=async (email,password)=>{
             module:modulejson,
             active:true,
         })
+        var hash = bcrypt.hashSync(password, 8);
+        
         const response=await User.create({
             email:email,
-            password:password,
+            password:hash,
             permissionId:permission?.id,
             roleId:roles?.id,
             status:'active',

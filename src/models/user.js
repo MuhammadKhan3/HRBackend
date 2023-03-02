@@ -1,5 +1,7 @@
 const { Sequelize, DataTypes } = require('sequelize');
-const sequelize=require('../untils/db')
+const sequelize=require('../untils/db');
+const Permission = require('./permission');
+const Role = require('./role');
 
 const User = sequelize.define('User', {
   id:{
@@ -19,7 +21,8 @@ const User = sequelize.define('User', {
   password: {
     type: DataTypes.STRING,
     allowNull: false
-  }
+  },
+
 });
 
 module.exports = User;

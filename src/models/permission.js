@@ -8,11 +8,13 @@ const Permission= sequelize.define('permission', {
         primaryKey: true
     },
     module:{
-        type:DataTypes.JSON
+        type:DataTypes.JSON,
+        allowNull:false,
     },
-    active:{
-        type:DataTypes.STRING
-    }
+    // status:{
+    //     type:DataTypes.ENUM,
+    //     values: ['active', 'inactive']
+    // }
 },{
     timestamps: true,
     timezone: '+00:00'

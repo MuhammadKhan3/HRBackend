@@ -24,11 +24,7 @@ if (cluster.isMaster) {
     cluster.fork();
   });
 } else {
-
   app.listen(PORT, () => {
     console.log(`Server started on port ${PORT} in worker process ${process.pid}`);
-  
   });
-  // Start the worker process
-  console.log(`Worker process ${process.pid} started`);
 }
