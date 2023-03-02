@@ -1,1 +1,12 @@
 {"level":"error","message":"notNull Violation: User.roleId cannot be null","timestamp":"2023-03-02T14:18:35.290Z"}
+{"level":"error","message":"notNull Violation: User.roleId cannot be null","timestamp":"2023-03-02T15:35:26.654Z"}
+{"level":"error","message":"jwt is not defined","timestamp":"2023-03-02T18:12:18.270Z"}
+{"level":"error","message":"notNull Violation: User.roleId cannot be null","timestamp":"2023-03-02T18:40:01.758Z"}
+{"level":"error","message":"Model is not defined","timestamp":"2023-03-02T18:43:53.548Z"}
+{"level":"error","message":"bcrypt is not defined","timestamp":"2023-03-02T18:49:01.668Z"}
+{"level":"error","message":"bcrypt is not defined","timestamp":"2023-03-02T18:49:04.505Z"}
+{"level":"error","message":"Association with alias \"roleId\" does not exist on User","timestamp":"2023-03-02T18:54:28.108Z"}
+{"level":"error","message":"User is not associated to User!","timestamp":"2023-03-02T18:56:31.827Z"}
+{"level":"error","message":"User is not associated to User!","timestamp":"2023-03-02T18:56:34.373Z"}
+{"level":"error","message":"Unknown column 'User.active' in 'where clause'","timestamp":"2023-03-02T19:01:12.265Z"}
+{"level":"error","message":"user is not defined","timestamp":"2023-03-02T19:08:02.281Z"}

@@ -11,8 +11,6 @@ const User = sequelize.define('User', {
   },
   email: {
     type: DataTypes.STRING,
-    allowNull: false,
-    unique: true
   },
   status:{
     type:DataTypes.ENUM,
@@ -22,7 +20,6 @@ const User = sequelize.define('User', {
     type: DataTypes.STRING,
     allowNull: false
   },
-
 });
 
 module.exports = User;

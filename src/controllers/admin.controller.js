@@ -1,6 +1,6 @@
 const Role = require("../models/role")
 const {Error}=require('../helpers/helper')
-const {InsertRole,Signup} = require("../services/admin.service")
+const {InsertRole,Signup, Login} = require("../services/admin.service")
 
 exports.createAdmin=(req,res,next)=>{
     try {
@@ -32,6 +32,8 @@ exports.signup=async (req,res,next)=>{
     return Error(req,res,error);   
   }
 }
+
+
 
 
 

@@ -2,14 +2,12 @@ const Manager=require('../services/manager.service')
 
 
 exports.createManager=async (req,res,next)=>{
-    const data=req.body;
-    console.log(data)
-    console.log(req.file)
-    console.log(req.files)
+    const {name,phone,email,password,status,module,userId}=req.body;
+
 
     try {
-        const response=await Manager.createManager(data);
-        
+        const response=await Manager.createManager(req.file,name,phone,email,password,status,module,userId);
+        res.json({msg:"Manager Successfully Created",flag:true,response:response})
 
     } catch (error) {
         return Error(req,res,error);

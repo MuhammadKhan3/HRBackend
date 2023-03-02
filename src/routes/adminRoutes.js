@@ -4,7 +4,7 @@ const adminController=require('../controllers/admin.controller');
 const managerController=require('../controllers/manager.controller');
 const { managerImage } = require('../middleware/multer');
 
-const {validRole,validUser,validManager}=require('../validations/admin.validation');
+const {validRole,validUser,validManager}=require('../validations/validations');
 
 router.post('/',adminController.createAdmin);
 router.post('/insert-role',validRole,adminController.insertRole);

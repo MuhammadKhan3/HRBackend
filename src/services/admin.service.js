@@ -1,9 +1,9 @@
-const {insertRoleDto,signupDto}=require('../dto/admin.dto');
+const {insertRoleDto,signupDto}=require('../dto/dto');
 const Permission = require('../models/permission');
 const Role=require('../models/role');
 const User = require('../models/user');
 var bcrypt = require('bcryptjs');
-
+var jwt = require('jsonwebtoken');
 
 const InsertRole=async (roleName)=>{
     const response=await Role.create({roleName:roleName});
@@ -38,5 +38,7 @@ const Signup=async (email,password)=>{
         })
         return signupDto(response);
 }
+
+
 
 module.exports={InsertRole,Signup};
