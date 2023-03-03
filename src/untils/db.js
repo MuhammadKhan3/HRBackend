@@ -16,6 +16,8 @@ const sequelize = new Sequelize(dbname,user,password , {
   },
 });
 
+const transaction=sequelize;
+
 sequelize
 .authenticate()
 .then(() => console.log('Connection has been established successfully.'))

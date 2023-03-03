@@ -16,12 +16,13 @@ const signupDto=(data)=>{
 
 const LoginDto=(data)=>{
     return {
-        id:data?.id,
+        userId:data?.id,
         email:data?.email,
         active:data?.status,
         role:data?.role,
         permission:data?.permission
     }
 }
+
 
 module.exports={insertRoleDto,signupDto,LoginDto}

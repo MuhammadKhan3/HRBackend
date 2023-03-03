@@ -36,9 +36,15 @@ const Manager= sequelize.define('manager', {
         type:DataTypes.ENUM,
         values: ['active', 'inactive']
     },
+    createId:{
+        type:DataTypes.INTEGER,
+        allowNull:false
+    }
 },{
     timestamps: true,
-    timezone: '+00:00'
+    timezone: '+00:00',
+    paranoid: true,
+      
 });
 
 module.exports = Manager;

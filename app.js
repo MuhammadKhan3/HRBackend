@@ -9,6 +9,9 @@ const Permission = require('./src/models/permission');
 const logger=require('./src/logs');
 const bodyParser=require('body-parser')
 const Manager = require('./src/models/manager');
+// .evn file get
+require('dotenv').config();
+
 // Routes
 const adminRoutes=require('./src/routes/adminRoutes');
 const Api=require('./src/routes/apiRoutes');
@@ -24,12 +27,6 @@ app.use(bodyParser.urlencoded({extended:true}))
 
 app.use('/api/admin',adminRoutes)
 app.use('/api',Api)
-// app.use('/api/login',Api)
-
-// Error Handler
-// app.use((error,req,res,next)=>{
-// console.log('issue',error)  
-// })
 
 
 // RelationShips Role and Permissions
@@ -54,15 +51,15 @@ User.belongsTo(Permission);
 User.hasOne(Manager,{foreignKey:'userId',allowNull:false});
 Manager.belongsTo(User,{foreignKey: 'userId'})
 
-User.hasMany(Manager,{foreignKey:'creatId',allowNull:false})
-Manager.belongsTo(User,{foreignKey: 'userId'})
+User.hasMany(Manager,{foreignKey:'createId'})
+Manager.belongsTo(User,{foreignKey: 'createId'})
 
 
 
 
 // My sql database create
 sequelize
-.sync({alter:true})
+.sync({})
 .then(() => {
   console.log('Models synchronized successfully.');
 })
@@ -70,6 +67,6 @@ sequelize
   console.error('Error synchronizing models:', error);
 });
 
-
+ 
 
 module.exports=app;

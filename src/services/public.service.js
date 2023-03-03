@@ -1,10 +1,10 @@
 const {Op} =require('sequelize')
 const User=require('../models/user');
-
-
 const bcrypt=require('bcryptjs');
 const Permission = require('../models/permission');
 const { LoginDto } = require('../dto/dto');
+const jwt=require('jsonwebtoken')
+
 
 const Login=async(req,res,email,password)=>{
 
@@ -18,7 +18,11 @@ const Login=async(req,res,email,password)=>{
     let verify=await bcrypt.compare(password, user.password);
 
     if(verify){
-        return LoginDto(user);
+        const secret=process.env.secretKey;
+        console.log(secret)
+        const data=await LoginDto(user);
+        var token =await jwt.sign(data, secret,{ expiresIn: '1d' });
+        return {data,token};
     }else{
         res.json({msg:"User Not Exist",flag:false})
     }

@@ -10,3 +10,17 @@
 {"level":"error","message":"User is not associated to User!","timestamp":"2023-03-02T18:56:34.373Z"}
 {"level":"error","message":"Unknown column 'User.active' in 'where clause'","timestamp":"2023-03-02T19:01:12.265Z"}
 {"level":"error","message":"user is not defined","timestamp":"2023-03-02T19:08:02.281Z"}
+{"level":"error","message":"hash is not defined","timestamp":"2023-03-03T10:01:40.961Z"}
+{"level":"error","message":"hash is not defined","timestamp":"2023-03-03T10:01:55.367Z"}
+{"level":"error","message":"secret is not defined","timestamp":"2023-03-03T10:08:00.453Z"}
+{"level":"error","message":"secret is not defined","timestamp":"2023-03-03T10:08:46.059Z"}
+{"level":"error","message":"Cannot access 'Manager' before initialization","timestamp":"2023-03-03T10:32:33.907Z"}
+{"level":"error","message":"Include unexpected. Element has to be either a Model, an Association or an object.","timestamp":"2023-03-03T10:33:08.484Z"}
+{"level":"error","message":"Unknown column 'deletedAt' in 'field list'","timestamp":"2023-03-03T10:33:19.880Z"}
+{"level":"error","message":"Include unexpected. Element has to be either a Model, an Association or an object.","timestamp":"2023-03-03T10:36:44.241Z"}
+{"level":"error","message":"req is not defined","timestamp":"2023-03-03T11:40:56.817Z"}
+{"level":"error","message":"notNull Violation: manager.createId cannot be null","timestamp":"2023-03-03T11:52:17.226Z"}
+{"level":"error","message":"notNull Violation: manager.createId cannot be null","timestamp":"2023-03-03T11:53:43.561Z"}
+{"level":"error","message":"notNull Violation: manager.createId cannot be null","timestamp":"2023-03-03T11:59:30.840Z"}
+{"level":"error","message":"res is not defined","timestamp":"2023-03-03T12:05:15.447Z"}
+{"level":"error","message":"res is not defined","timestamp":"2023-03-03T12:05:17.416Z"}
