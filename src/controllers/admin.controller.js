@@ -12,7 +12,6 @@ exports.createAdmin=(req,res,next)=>{
 
 
 exports.insertRole=async (req,res,next)=>{
-    console.log('ro.e')
     const {roleName}=req.body;
     try {
         const response=await InsertRole(roleName)
@@ -24,7 +23,6 @@ exports.insertRole=async (req,res,next)=>{
 
 exports.signup=async (req,res,next)=>{
   const {userType,email,password}=req.body;
-  console.log(email,password)
   try {
     const data=await Signup(email,password);
     return res.status(200).json({status:true,msg:"Admin Created Succefully",data:data}) 

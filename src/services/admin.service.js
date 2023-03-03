@@ -12,7 +12,6 @@ const InsertRole=async (roleName)=>{
 
 const Signup=async (email,password)=>{
         const roles=await Role.findOne({where:{roleName:'admin'}});
-        console.log('id...',roles?.id)
         let modulejson={
             employee:{view:true,add:true,edit:true,delete:true},
             attendance:{view:true,add:true},

@@ -4,6 +4,10 @@ const {Op} =require('sequelize')
 
 module.exports=async (req,res,next)=>{
   try {
+
+        if(!req?.headers?.authorization){
+          res.status(401).json({msg:'You are not Valid',flag:false})
+        }
         const token = req.headers.authorization.split(' ')[1];
         const secret= process.env.secretKey;
         const decodedToken =await jwt.verify(token, secret);

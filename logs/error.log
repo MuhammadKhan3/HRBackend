@@ -1,26 +1,21 @@
-{"level":"error","message":"notNull Violation: User.roleId cannot be null","timestamp":"2023-03-02T14:18:35.290Z"}
-{"level":"error","message":"notNull Violation: User.roleId cannot be null","timestamp":"2023-03-02T15:35:26.654Z"}
-{"level":"error","message":"jwt is not defined","timestamp":"2023-03-02T18:12:18.270Z"}
-{"level":"error","message":"notNull Violation: User.roleId cannot be null","timestamp":"2023-03-02T18:40:01.758Z"}
-{"level":"error","message":"Model is not defined","timestamp":"2023-03-02T18:43:53.548Z"}
-{"level":"error","message":"bcrypt is not defined","timestamp":"2023-03-02T18:49:01.668Z"}
-{"level":"error","message":"bcrypt is not defined","timestamp":"2023-03-02T18:49:04.505Z"}
-{"level":"error","message":"Association with alias \"roleId\" does not exist on User","timestamp":"2023-03-02T18:54:28.108Z"}
-{"level":"error","message":"User is not associated to User!","timestamp":"2023-03-02T18:56:31.827Z"}
-{"level":"error","message":"User is not associated to User!","timestamp":"2023-03-02T18:56:34.373Z"}
-{"level":"error","message":"Unknown column 'User.active' in 'where clause'","timestamp":"2023-03-02T19:01:12.265Z"}
-{"level":"error","message":"user is not defined","timestamp":"2023-03-02T19:08:02.281Z"}
-{"level":"error","message":"hash is not defined","timestamp":"2023-03-03T10:01:40.961Z"}
-{"level":"error","message":"hash is not defined","timestamp":"2023-03-03T10:01:55.367Z"}
-{"level":"error","message":"secret is not defined","timestamp":"2023-03-03T10:08:00.453Z"}
-{"level":"error","message":"secret is not defined","timestamp":"2023-03-03T10:08:46.059Z"}
-{"level":"error","message":"Cannot access 'Manager' before initialization","timestamp":"2023-03-03T10:32:33.907Z"}
-{"level":"error","message":"Include unexpected. Element has to be either a Model, an Association or an object.","timestamp":"2023-03-03T10:33:08.484Z"}
-{"level":"error","message":"Unknown column 'deletedAt' in 'field list'","timestamp":"2023-03-03T10:33:19.880Z"}
-{"level":"error","message":"Include unexpected. Element has to be either a Model, an Association or an object.","timestamp":"2023-03-03T10:36:44.241Z"}
-{"level":"error","message":"req is not defined","timestamp":"2023-03-03T11:40:56.817Z"}
-{"level":"error","message":"notNull Violation: manager.createId cannot be null","timestamp":"2023-03-03T11:52:17.226Z"}
-{"level":"error","message":"notNull Violation: manager.createId cannot be null","timestamp":"2023-03-03T11:53:43.561Z"}
-{"level":"error","message":"notNull Violation: manager.createId cannot be null","timestamp":"2023-03-03T11:59:30.840Z"}
-{"level":"error","message":"res is not defined","timestamp":"2023-03-03T12:05:15.447Z"}
-{"level":"error","message":"res is not defined","timestamp":"2023-03-03T12:05:17.416Z"}
+{"level":"error","message":"notNull Violation: manager.photo cannot be null","timestamp":"2023-03-03T14:46:01.110Z"}
+{"level":"error","message":"notNull Violation: manager.photo cannot be null","timestamp":"2023-03-03T14:47:40.746Z"}
+{"level":"error","message":"notNull Violation: manager.photo cannot be null","timestamp":"2023-03-03T14:50:24.708Z"}
+{"level":"error","message":"WHERE parameter \"id\" has invalid \"undefined\" value","timestamp":"2023-03-03T15:21:07.781Z"}
+{"level":"error","message":"Cannot read properties of null (reading 'destroy')","timestamp":"2023-03-03T16:13:41.003Z"}
+{"level":"error","message":"Cannot read properties of null (reading 'destroy')","timestamp":"2023-03-03T16:13:44.081Z"}
+{"level":"error","message":"Cannot read properties of null (reading 'destroy')","timestamp":"2023-03-03T16:14:09.576Z"}
+{"level":"error","message":"Cannot read properties of null (reading 'destroy')","timestamp":"2023-03-03T16:14:30.937Z"}
+{"level":"error","message":"Cannot read properties of null (reading 'password')","timestamp":"2023-03-03T16:19:21.764Z"}
+{"level":"error","message":"Cannot read properties of null (reading 'password')","timestamp":"2023-03-03T16:19:31.585Z"}
+{"level":"error","message":"Cannot set headers after they are sent to the client","timestamp":"2023-03-03T16:19:59.787Z"}
+{"level":"error","message":"Cannot read properties of null (reading 'password')","timestamp":"2023-03-03T16:20:48.528Z"}
+{"level":"error","message":"Cannot read properties of null (reading 'password')","timestamp":"2023-03-03T16:20:49.672Z"}
+{"level":"error","message":"notNull Violation: department.userId cannot be null","timestamp":"2023-03-03T18:19:26.272Z"}
+{"level":"error","message":"notNull Violation: department.userId cannot be null","timestamp":"2023-03-03T18:19:42.441Z"}
+{"level":"error","message":"req is not defined","timestamp":"2023-03-03T18:20:29.838Z"}
+{"level":"error","message":"notNull Violation: department.userId cannot be null","timestamp":"2023-03-03T18:21:00.608Z"}
+{"level":"error","message":"notNull Violation: department.userId cannot be null","timestamp":"2023-03-03T18:21:06.344Z"}
+{"level":"error","message":"notNull Violation: department.userId cannot be null","timestamp":"2023-03-03T18:21:29.389Z"}
+{"level":"error","message":"child is not iterable","timestamp":"2023-03-03T18:31:46.433Z"}
+{"level":"error","message":"child is not iterable","timestamp":"2023-03-03T18:31:49.003Z"}

@@ -139,6 +139,9 @@ exports.validLogin=[
         if (!user) {
           return Promise.reject('E-mail Not Exist');
         }
+        if(user.status==='inactive'){
+          return Promise.reject('Your account is blocked');
+        }
       });
     })
     ,
@@ -156,3 +159,5 @@ exports.validLogin=[
 ];
 
 // Close Validation Login
+
+

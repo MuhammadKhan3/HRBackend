@@ -1,3 +1,0 @@
-{"level":"info","message":"This is an information message.","timestamp":"2023-02-27T19:41:29.923Z"}
-{"level":"error","message":"This is an error message.","timestamp":"2023-02-27T19:41:29.925Z"}
-{"level":"http","message":"This is an HTTP response.","timestamp":"2023-02-27T19:41:29.926Z"}
